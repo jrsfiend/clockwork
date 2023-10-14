@@ -24,8 +24,8 @@
 
 | Program | Address| Devnet | Mainnet |
 | ------- | ------ | ------ | ------- |
-| Network | `F8dKseqmBoAkHx3c58Lmb9TgJv5qeTf3BbtZZSEzYvUa` | [v2.0.15](https://explorer.solana.com/address/F8dKseqmBoAkHx3c58Lmb9TgJv5qeTf3BbtZZSEzYvUa) | [v2.0.0](https://explorer.solana.com/address/F8dKseqmBoAkHx3c58Lmb9TgJv5qeTf3BbtZZSEzYvUa) |
-| Thread v2 | `CLoCKyJ6DXBJqqu2VWx9RLbgnwwR6BMHHuyasVmfMzBh` | [v2.0.18](https://explorer.solana.com/address/CLoCKyJ6DXBJqqu2VWx9RLbgnwwR6BMHHuyasVmfMzBh?cluster=devnet) | [v2.0.17](https://explorer.solana.com/address/CLoCKyJ6DXBJqqu2VWx9RLbgnwwR6BMHHuyasVmfMzBh) |
+| Network | `Gw3gzcisAR5baK4Uh4XTp57tam7TuT5uYnuxRdVz7Qu9` | [v2.0.15](https://explorer.solana.com/address/Gw3gzcisAR5baK4Uh4XTp57tam7TuT5uYnuxRdVz7Qu9) | [v2.0.0](https://explorer.solana.com/address/Gw3gzcisAR5baK4Uh4XTp57tam7TuT5uYnuxRdVz7Qu9) |
+| Thread v2 | `Axph1MeNtiMSJrXsAB2GiTn6acPt6m4JBVT9YZPgEhhM` | [v2.0.18](https://explorer.solana.com/address/Axph1MeNtiMSJrXsAB2GiTn6acPt6m4JBVT9YZPgEhhM?cluster=devnet) | [v2.0.17](https://explorer.solana.com/address/Axph1MeNtiMSJrXsAB2GiTn6acPt6m4JBVT9YZPgEhhM) |
 | Thread v1 | `3XXuUFfweXBwFgFfYaejLvZE4cGZiHgKiGfMtdxNzYmv` | [v1.4.2](https://explorer.solana.com/address/3XXuUFfweXBwFgFfYaejLvZE4cGZiHgKiGfMtdxNzYmv?cluster=devnet) | [v1.4.2](https://explorer.solana.com/address/3XXuUFfweXBwFgFfYaejLvZE4cGZiHgKiGfMtdxNzYmv) |
 
 # SDKs

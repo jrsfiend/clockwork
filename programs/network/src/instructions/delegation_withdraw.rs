@@ -3,7 +3,6 @@ use {
     anchor_lang::prelude::*,
     anchor_spl::token::{transfer, Token, TokenAccount, Transfer},
 };
-
 #[derive(Accounts)]
 #[instruction(amount: u64)]
 pub struct DelegationWithdraw<'info> {
@@ -49,9 +48,8 @@ pub fn handler(ctx: Context<DelegationWithdraw>, amount: u64) -> Result<()> {
     let delegation = &ctx.accounts.delegation;
     let delegation_tokens = &ctx.accounts.delegation_tokens;
     let token_program = &ctx.accounts.token_program;
-
-    // Transfer tokens from authority tokens to delegation
-    let bump = *ctx.bumps.get("delegation").unwrap();
+    // DelegationWithdrawBumps::get("delegation")
+    let bump = ctx.accounts.delegation.bump;
     transfer(
         CpiContext::new_with_signer(
             token_program.to_account_info(),

@@ -3,19 +3,24 @@ cluster = "mainnet"
 wallet = "~/.config/solana/id.json"
 
 [programs.localnet]
-clockwork_network_program = "F8dKseqmBoAkHx3c58Lmb9TgJv5qeTf3BbtZZSEzYvUa"
-clockwork_thread_program = "CLoCKyJ6DXBJqqu2VWx9RLbgnwwR6BMHHuyasVmfMzBh"
-clockwork_webhook_program = "E7p5KFo8kKCDm6BUnWtnVFkQSYh6ZA6xaGAuvpv8NXTa"
+clockwork_network_program = "Gw3gzcisAR5baK4Uh4XTp57tam7TuT5uYnuxRdVz7Qu9"
+clockwork_thread_program = "Axph1MeNtiMSJrXsAB2GiTn6acPt6m4JBVT9YZPgEhhM"
+clockwork_webhook_program = "2Ta8JBMNnWoddVeHBP3xZbZMgyPbbV4wvCn9r8EsmQbm"
+
+[programs.devnet]
+clockwork_network_program = "Gw3gzcisAR5baK4Uh4XTp57tam7TuT5uYnuxRdVz7Qu9"
+clockwork_thread_program = "Axph1MeNtiMSJrXsAB2GiTn6acPt6m4JBVT9YZPgEhhM"
+clockwork_webhook_program = "2Ta8JBMNnWoddVeHBP3xZbZMgyPbbV4wvCn9r8EsmQbm"
 
 [programs.testnet]
-clockwork_network_program = "F8dKseqmBoAkHx3c58Lmb9TgJv5qeTf3BbtZZSEzYvUa"
-clockwork_thread_program = "CLoCKyJ6DXBJqqu2VWx9RLbgnwwR6BMHHuyasVmfMzBh"
-clockwork_webhook_program = "E7p5KFo8kKCDm6BUnWtnVFkQSYh6ZA6xaGAuvpv8NXTa"
+clockwork_network_program = "Gw3gzcisAR5baK4Uh4XTp57tam7TuT5uYnuxRdVz7Qu9"
+clockwork_thread_program = "Axph1MeNtiMSJrXsAB2GiTn6acPt6m4JBVT9YZPgEhhM"
+clockwork_webhook_program = "2Ta8JBMNnWoddVeHBP3xZbZMgyPbbV4wvCn9r8EsmQbm"
 
 [programs.mainnet]
-clockwork_network_program = "F8dKseqmBoAkHx3c58Lmb9TgJv5qeTf3BbtZZSEzYvUa"
-clockwork_thread_program = "CLoCKyJ6DXBJqqu2VWx9RLbgnwwR6BMHHuyasVmfMzBh"
-clockwork_webhook_program = "E7p5KFo8kKCDm6BUnWtnVFkQSYh6ZA6xaGAuvpv8NXTa"
+clockwork_network_program = "Gw3gzcisAR5baK4Uh4XTp57tam7TuT5uYnuxRdVz7Qu9"
+clockwork_thread_program = "Axph1MeNtiMSJrXsAB2GiTn6acPt6m4JBVT9YZPgEhhM"
+clockwork_webhook_program = "2Ta8JBMNnWoddVeHBP3xZbZMgyPbbV4wvCn9r8EsmQbm"
 
 [registry]
 url = "https://anchor.projectserum.com"

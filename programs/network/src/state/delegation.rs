@@ -20,6 +20,7 @@ pub struct Delegation {
 
     /// The number of lamports claimable as yield by the authority.
     pub yield_balance: u64,
+    pub bump: u8,
 }
 
 impl Delegation {

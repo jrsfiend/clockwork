@@ -15,7 +15,7 @@ use instructions::*;
 use jobs::*;
 use state::*;
 
-declare_id!("F8dKseqmBoAkHx3c58Lmb9TgJv5qeTf3BbtZZSEzYvUa");
+declare_id!("Gw3gzcisAR5baK4Uh4XTp57tam7TuT5uYnuxRdVz7Qu9");
 
 #[program]
 pub mod network_program {
@@ -29,8 +29,8 @@ pub mod network_program {
         delegation_claim::handler(ctx, amount)
     }
 
-    pub fn delegation_create(ctx: Context<DelegationCreate>) -> Result<()> {
-        delegation_create::handler(ctx)
+    pub fn delegation_create(ctx: Context<DelegationCreate>, bump: u8) -> Result<()> {
+        delegation_create::handler(ctx, bump)
     }
 
     pub fn delegation_deposit(ctx: Context<DelegationDeposit>, amount: u64) -> Result<()> {

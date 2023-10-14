@@ -66,12 +66,12 @@ pub struct DelegationCreate<'info> {
     pub worker: Account<'info, Worker>,
 }
 
-pub fn handler(ctx: Context<DelegationCreate>) -> Result<()> {
+pub fn handler(ctx: Context<DelegationCreate>, bump: u8) -> Result<()> {
     // Get accounts
     let authority = &ctx.accounts.authority;
     let delegation = &mut ctx.accounts.delegation;
     let worker = &mut ctx.accounts.worker;
-
+    delegation.bump = bump;
     // Initialize the delegation account.
     delegation.init(authority.key(), worker.total_delegations, worker.key())?;
 
