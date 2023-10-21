@@ -31,6 +31,13 @@ impl Delegation {
         )
         .0
     }
+    pub fn bump(worker: Pubkey, id: u64) -> u8 {
+        Pubkey::find_program_address(
+            &[SEED_DELEGATION, worker.as_ref(), id.to_be_bytes().as_ref()],
+            &crate::ID,
+        )
+        .1
+    }
 }
 
 /// DelegationAccount

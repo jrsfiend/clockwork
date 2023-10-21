@@ -28,6 +28,7 @@ pub fn create(client: &Client, worker_id: u64) -> Result<(), CliError> {
 
     // Build ix
     let delegation_pubkey = Delegation::pubkey(worker_pubkey, worker.total_delegations);
+    let bump = Delegation::bump(worker_pubkey, worker.total_delegations);
     let ix = Instruction {
         program_id: clockwork_network_program::ID,
         accounts: clockwork_network_program::accounts::DelegationCreate {
@@ -42,7 +43,9 @@ pub fn create(client: &Client, worker_id: u64) -> Result<(), CliError> {
             token_program: anchor_spl::token::ID,
             worker: worker_pubkey,
         }.to_account_metas(Some(false)),
-        data: clockwork_network_program::instruction::DelegationCreate {}.data(),
+        data: clockwork_network_program::instruction::DelegationCreate {
+            bump
+        }.data(),
     };
     client.send_and_confirm(&[ix], &[client.payer()]).unwrap();
 
